@@ -1,14 +1,14 @@
 pipeline {
     agent any
     stages{
-        stage('REPO Cloning'){
+        stage('WORKING STAGE'){
             steps {
                 
                 bat 'xcopy /S "*" "C:/xampp/htdocs/exp4" /Y'
             }
         }
 
-        stage('Print done'){
+        stage('FINAL STAGE'){
             steps{
                 echo 'Done!'
             }
